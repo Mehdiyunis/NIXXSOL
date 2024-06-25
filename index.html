@@ -60,8 +60,31 @@
           <li onclick="unDefined()" class="contact_us_text">Contact Us</li>
         </ul>
       </nav>
+
     </header>
 
+    <button onclick="getMenu()" class="mob_menu_ox">
+      <span class="material-symbols-outlined"> menu </span>
+      <span class="material-symbols-outlined"> close </span>
+    </button>
+    <div class="mobile_menu_fullscreen">
+      <div class="mobile_menu_con">
+        <h3>Menu</h3>
+        <ul class="mobile_menu">
+          <li onclick="unDefined()">Home</li>
+          <li onclick="unDefined()">About</li>
+          <li onclick="unDefined()" class="down_icon_li">
+            IT services
+            <div class="down_icon">
+              <img src="imgs/DownIcon.png" alt="down icon" />
+            </div>
+          </li>
+          <li onclick="unDefined()">Portfolio</li>
+          <li onclick="unDefined()" class="contact_us_text">Contact Us</li>
+        </ul>
+      </div>
+    </div>
+    
     <main>
       <section class="head_section">
         <div class="head_text">
@@ -171,7 +194,12 @@
               name=""
               placeholder="Tall us about the project you are working on (Optional)"
             ></textarea>
-            <input onclick="event.preventDefault()" class="submit_inp" type="submit" value="Submit" />
+            <input
+              onclick="event.preventDefault()"
+              class="submit_inp"
+              type="submit"
+              value="Submit"
+            />
           </form>
         </div>
       </section>
@@ -199,7 +227,12 @@
           <div class="contact_us">
             <h3 class="content_us_title">Stay in Conection</h3>
             <div class="inp-btn">
-              <input onfocus="unDefined()" class="inp" type="email" placeholder="Email Address" />
+              <input
+                onfocus="unDefined()"
+                class="inp"
+                type="email"
+                placeholder="Email Address"
+              />
               <button class="btn">Contact Us</button>
             </div>
           </div>

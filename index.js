@@ -214,3 +214,11 @@ const unDefined = function() {
   unDefinedElement.classList.add("unDefinedElementShow")
   setTimeout(()=>unDefinedElement.classList.remove("unDefinedElementShow") , 3000)
 }
+
+const mobMenuOx = document.querySelector(".mob_menu_ox");
+const mobileMenuFullscreen = document.querySelector(".mobile_menu_fullscreen");
+
+const getMenu = function(){
+  mobMenuOx.classList.toggle("close");
+  mobileMenuFullscreen.classList.toggle("close");
+}
