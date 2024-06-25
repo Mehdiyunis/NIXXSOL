@@ -205,4 +205,12 @@ portfolioSlide.forEach((item)=>{
             </div>`
 })
 
+const unDefinedElement = document.createElement("div");
+unDefinedElement.innerText = "Keçid təyin edilməyib :(";
+document.body.appendChild(unDefinedElement);
+unDefinedElement.classList.add("unDefinedElement")
 
+const unDefined = function() {
+  unDefinedElement.classList.add("unDefinedElementShow")
+  setTimeout(()=>unDefinedElement.classList.remove("unDefinedElementShow") , 3000)
+}

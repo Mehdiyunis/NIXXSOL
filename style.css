@@ -605,6 +605,7 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
   display: flex;
   align-items: center;
   gap: 21px;
+  cursor: pointer;
 }
 
 .footer .footer_content_con .info_con .info .icon_div {
@@ -637,6 +638,7 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
   font-size: 21px;
   line-height: 26px;
   transition: color 0.2s;
+  cursor: pointer;
 }
 
 .footer
@@ -766,4 +768,24 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
 
 .footer .footer_last-word_con .last-word .social_media i:hover {
   transform: scale(1.5);
+}
+
+
+.unDefinedElement{
+  position: fixed;
+  z-index: 9999;
+  padding: 15px 30px;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #e4252c;
+  background-color: #e4252c;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 40px 3px #ff0008;
+  transition: all .3s;
+}
+
+.unDefinedElementShow {
+  top: 30px;
 }

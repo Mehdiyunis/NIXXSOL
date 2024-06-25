@@ -39,7 +39,7 @@
   <body>
     <header class="header">
       <nav class="home_page_nav">
-        <div class="logo_container">
+        <div onclick="unDefined()" class="logo_container">
           <div class="logo">
             <img src="imgs/Vector.png" alt="logo" />
           </div>
@@ -48,16 +48,16 @@
           </div>
         </div>
         <ul class="menu">
-          <li>Home</li>
-          <li>About</li>
-          <li class="down_icon_li">
+          <li onclick="unDefined()">Home</li>
+          <li onclick="unDefined()">About</li>
+          <li onclick="unDefined()" class="down_icon_li">
             IT services
             <div class="down_icon">
               <img src="imgs/DownIcon.png" alt="down icon" />
             </div>
           </li>
-          <li>Portfolio</li>
-          <li class="contact_us_text">Contact Us</li>
+          <li onclick="unDefined()">Portfolio</li>
+          <li onclick="unDefined()" class="contact_us_text">Contact Us</li>
         </ul>
       </nav>
     </header>
@@ -120,15 +120,13 @@
               Lorem ipsum dolor sit amet consectetur. Nunc viverra faucibus
               praesent elementum commodo.
             </p>
-            <button class="btn">
+            <button onclick="unDefined()" class="btn">
               More Portfolio
               <span class="material-symbols-outlined"> chevron_right </span>
             </button>
           </div>
 
-          <div class="owl-carousel owl-theme carusel">
-            
-          </div>
+          <div class="owl-carousel owl-theme carusel"></div>
         </div>
       </section>
 
@@ -173,7 +171,7 @@
               name=""
               placeholder="Tall us about the project you are working on (Optional)"
             ></textarea>
-            <input class="submit_inp" type="submit" value="Submit" />
+            <input onclick="event.preventDefault()" class="submit_inp" type="submit" value="Submit" />
           </form>
         </div>
       </section>
@@ -192,7 +190,7 @@
         <div class="info_con"></div>
 
         <div class="mini_menu-contact_us">
-          <ul class="mini_menu">
+          <ul onclick="unDefined()" class="mini_menu">
             <li class="menu_item"><button>About</button></li>
             <li class="menu_item"><button>Services</button></li>
             <li class="menu_item"><button>Portfolio</button></li>
@@ -201,7 +199,7 @@
           <div class="contact_us">
             <h3 class="content_us_title">Stay in Conection</h3>
             <div class="inp-btn">
-              <input class="inp" type="email" placeholder="Email Address" />
+              <input onfocus="unDefined()" class="inp" type="email" placeholder="Email Address" />
               <button class="btn">Contact Us</button>
             </div>
           </div>
