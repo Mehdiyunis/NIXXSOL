@@ -67,8 +67,8 @@
       <span class="material-symbols-outlined"> menu </span>
       <span class="material-symbols-outlined"> close </span>
     </button>
-    <div class="mobile_menu_fullscreen">
-      <div class="mobile_menu_con">
+    <div onclick="getMenu()" class="mobile_menu_fullscreen">
+      <div onclick="event.stopPropagation()" class="mobile_menu_con">
         <h3>Menu</h3>
         <ul class="mobile_menu">
           <li onclick="unDefined()">Home</li>

@@ -245,6 +245,8 @@ main .head_section {
 
 main .head_section .head_text {
   width: calc(50% - 10px);
+  flex-shrink: 0;
+
 }
 
 main .head_section .head_text h1 {
@@ -258,6 +260,70 @@ main .head_section .head_text h1 {
 
 main .head_section .head_img {
   width: 50%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1228px){
+  main .head_section{
+    width: 960px;
+  }
+  main .head_section .head_text h1{
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 992px){
+  main .head_section{
+    width: 720px;
+  }
+  main .head_section .head_text h1{
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px){
+  main .head_section{
+    width: 540px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main .head_section .head_text{
+    width: 100%;
+  }
+
+  main .head_section .head_text h1{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  main .head_section .head_img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px){
+  main .head_section{
+    width: auto;
+    max-width: 343px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main .head_section .head_text{
+    width: 100%;
+  }
+
+  main .head_section .head_text h1{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  main .head_section .head_img {
+    width: 100%;
+  }
 }
 
 main section .abo_com_container {
@@ -341,6 +407,88 @@ main
   .indicator_name {
   color: #2e2e2e;
   font-size: 22px;
+}
+
+@media (max-width: 1228px){ 
+  main section .abo_com_container{
+    width: 960px;
+  }
+
+  main section .abo_com_container .abo_com_head_text h2{
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 992px){ 
+  main section .abo_com_container{
+    width: 720px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main section .abo_com_container .abo_com_head_text{
+    width: 100%;
+  }
+
+  main section .abo_com_container .abo_com_head_text h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  main
+  section
+  .abo_com_container
+  .abo_com_content
+  .indicators
+  .indicator{
+    width: auto;
+  }
+
+  main section .abo_com_container .abo_com_content{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){ 
+  main section .abo_com_container{
+    width: 540px;
+    gap: 20px;
+  }
+  main section .abo_com_container .abo_com_head_text h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+  main section .abo_com_container .abo_com_content .text{
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 576px){ 
+  main section .abo_com_container{
+    width: auto;
+    max-width: 343px;
+  }
+  main
+  section
+  .abo_com_container
+  .abo_com_content
+  .indicators
+  .indicator
+  .number{
+    font-size: 28px;
+  }
+
+  main
+  section
+  .abo_com_container
+  .abo_com_content
+  .indicators
+  .indicator
+  .indicator_name {
+    font-size: 16px;
+  }
 }
 
 main .services_sec {
