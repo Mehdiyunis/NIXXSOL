@@ -559,6 +559,78 @@ main .services_sec .services_con .cards .card .content {
   text-align: center;
 }
 
+@media (max-width: 1228px){
+  main .services_sec::before{
+    height: 270px;
+  }
+
+  main .services_sec .services_con{
+    width: 920px;
+  }
+
+  main .services_sec .services_con .services_text {
+    font-size: 65px;
+    line-height: 70px;
+    padding: 40px 0;
+  }
+
+  main .services_sec .services_con .cards{
+    gap: 0;
+    row-gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  main .services_sec .services_con .cards .card{
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px){
+  main .services_sec::before{
+    height: 220px;
+  }
+
+  main .services_sec .services_con{
+    width: 720px;
+  }
+
+  main .services_sec .services_con .services_text {
+    font-size: 45px;
+    line-height: 50px;
+    padding: 30px 0;
+  }
+
+  main .services_sec .services_con .cards .card{
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px){
+  main .services_sec::before{
+    height: 190px;
+  }
+
+  main .services_sec .services_con{
+    width: 540px;
+  }
+
+  main .services_sec .services_con .cards .card{
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px){
+
+  main .services_sec .services_con{
+    width: auto;
+    max-width: 343px;
+  }
+
+  main .services_sec .services_con .cards .card{
+    width: 100%;
+  }
+}
+
 main .portfolio_sec {
   padding: 65px 0 160px;
 }
