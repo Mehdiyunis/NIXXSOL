@@ -91,7 +91,6 @@ const sponsorLogo = [
 ]
 
 const sponsorCon = document.querySelector(".sponsor_sec .sponsor_con .sponsors");
-console.log(sponsorCon);
 
 sponsorLogo.forEach((item)=>{
   sponsorCon.innerHTML += `<div data-id="${item.id}" class="logo_div">
@@ -222,3 +221,18 @@ const getMenu = function(){
   mobMenuOx.classList.toggle("close");
   mobileMenuFullscreen.classList.toggle("close");
 }
+
+const submitBlock = function(event){
+  event.preventDefault()
+  unDefined()
+}
+
+/* let windowSize = window.innerWidth;
+
+if (windowSize != window.innerWidth) {
+  console.log(window.innerWidth);
+  windowSize = window.innerWidth
+} */
+
+console.log(window.innerWidth)
+
