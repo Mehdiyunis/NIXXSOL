@@ -1,3 +1,5 @@
+
+/* home page, services section datas */
 const services = [
   {
     id: 1,
@@ -49,8 +51,9 @@ const services = [
   },
 ];
 
-const cards = document.querySelector(".services_con .cards");
+/* services datas write html with forEach*/
 
+const cards = document.querySelector(".services_con .cards");
 services.forEach((item) => {
   cards.innerHTML += `<div class="card">
       <div class="icon_con">
@@ -66,93 +69,107 @@ services.forEach((item) => {
     </div>`;
 });
 
+/* home page, sponsors section datas */
 
 const sponsorLogo = [
   {
     id: 1,
-    url: "imgs/image_8.png"
+    url: "imgs/image_8.png",
   },
   {
     id: 2,
-    url: "imgs/image_9.png"
+    url: "imgs/image_9.png",
   },
   {
     id: 3,
-    url: "imgs/image_10.png"
+    url: "imgs/image_10.png",
   },
   {
     id: 4,
-    url: "imgs/image_11.png"
+    url: "imgs/image_11.png",
   },
   {
     id: 5,
-    url: "imgs/image_12.png"
+    url: "imgs/image_12.png",
   },
-]
+];
 
-const sponsorCon = document.querySelector(".sponsor_sec .sponsor_con .sponsors");
+/* sponsors data write html with forEach */
+const sponsorCon = document.querySelector(
+  ".sponsor_sec .sponsor_con .sponsors"
+);
 
-sponsorLogo.forEach((item)=>{
+sponsorLogo.forEach((item) => {
   sponsorCon.innerHTML += `<div data-id="${item.id}" class="logo_div">
             <img src="${item.url}" alt="">
-          </div>`
-})
+          </div>`;
+});
 
-
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText: [`
+/* owl carusel codes jQuery */
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    navText: [
+      `
     <span class="move_btn">
       <span class="material-symbols-outlined">
         chevron_left
       </span>
-    </span>`, 
+    </span>`,
 
-    `<span class="move_btn">
+      `<span class="move_btn">
       <span class="material-symbols-outlined"> 
         chevron_right 
       </span>
-    </span>`],
+    </span>`,
+    ],
     dots: false,
     items: 1,
-  })
+  });
 });
+
+/* secon sponsors section datas */
 
 const sponsorLogoTwo = [
   {
-    id: 1 ,
-    url: "imgs/image14.png"
+    id: 1,
+    url: "imgs/image14.png",
   },
   {
-    id: 2 ,
-    url: "imgs/image13.png"
+    id: 2,
+    url: "imgs/image13.png",
   },
   {
-    id: 3 ,
-    url: "imgs/image15.png"
+    id: 3,
+    url: "imgs/image15.png",
   },
   {
-    id: 4 ,
-    url: "imgs/image13.png"
+    id: 4,
+    url: "imgs/image13.png",
   },
   {
-    id: 5 ,
-    url: "imgs/image16.png"
+    id: 5,
+    url: "imgs/image16.png",
   },
-]
+];
 
-const sponsorConTwo = document.querySelector("main .sponsor_sec-two .sponsor_con-two");
+/* second sponsors write html*/
 
-sponsorLogoTwo.forEach((item)=>{
+const sponsorConTwo = document.querySelector(
+  "main .sponsor_sec-two .sponsor_con-two"
+);
+
+sponsorLogoTwo.forEach((item) => {
   sponsorConTwo.innerHTML += `<div data-id="${item.id}" class="card">
             <div class="img_div">
               <img src="${item.url}" alt="logo">
             </div>
-          </div>`
-})
+          </div>`;
+});
 
 const info = [
   {
@@ -170,69 +187,82 @@ const info = [
     iconURL: "imgs/locationIcon.png",
     info: "Lorem ipsum dolor sit amet consectetur. Dui libero lectus pulvinar mattis a.",
   },
-]
+];
 
-const infoCon = document.querySelector(".footer .footer_content_con .info_con")
+const infoCon = document.querySelector(".footer .footer_content_con .info_con");
 
-info.forEach((item)=>{
+info.forEach((item) => {
   infoCon.innerHTML += `<div data-id="${item.id}" class="info">
             <div class="icon_div"><img src="${item.iconURL}" alt="icon"></div>
             <span class="info_span">${item.info}</span>
-          </div>`
-})
+          </div>`;
+});
 
 const portfolioSlide = [
   {
     id: 1,
-    url: "imgs/Rectangle0.png"
+    url: "imgs/Rectangle0.png",
   },
   {
     id: 1,
-    url: "imgs/Rectangle.png"
+    url: "imgs/Rectangle.png",
   },
   {
     id: 1,
-    url: "imgs/Rectangle2.jpg"
+    url: "imgs/Rectangle2.jpg",
   },
-]
+];
 
-const portCarusel = document.querySelector(".portfolio_con .owl-carousel.owl-theme.carusel")
+const portCarusel = document.querySelector(
+  ".portfolio_con .owl-carousel.owl-theme.carusel"
+);
 
-portfolioSlide.forEach((item)=>{
+portfolioSlide.forEach((item) => {
   portCarusel.innerHTML += `<div data-id="${item.id}" class="item">
               <img src="${item.url}" alt="foto" />
-            </div>`
-})
+            </div>`;
+});
+
+/* custem alert for undefined links */
 
 const unDefinedElement = document.createElement("div");
 unDefinedElement.innerText = "Keçid təyin edilməyib :(";
 document.body.appendChild(unDefinedElement);
-unDefinedElement.classList.add("unDefinedElement")
+unDefinedElement.classList.add("unDefinedElement");
 
-const unDefined = function() {
-  unDefinedElement.classList.add("unDefinedElementShow")
-  setTimeout(()=>unDefinedElement.classList.remove("unDefinedElementShow") , 3000)
-}
+const unDefined = function () {
+  unDefinedElement.classList.add("unDefinedElementShow");
+  setTimeout(
+    () => unDefinedElement.classList.remove("unDefinedElementShow"),
+    3000
+  );
+};
+
+/* mobile menu open or close */
 
 const mobMenuOx = document.querySelector(".mob_menu_ox");
 const mobileMenuFullscreen = document.querySelector(".mobile_menu_fullscreen");
 
-const getMenu = function(){
+const getMenu = function () {
   mobMenuOx.classList.toggle("close");
   mobileMenuFullscreen.classList.toggle("close");
+};
+
+const submitBlock = function (event) {
+  event.preventDefault();
+  unDefined();
+};
+
+/* btn content change */
+
+const conUsBtn = document.querySelector(".mini_menu-contact_us .contact_us .inp-btn .btn");
+window.onresize = onReSize;
+window.onload = onReSize;
+
+function onReSize() {
+  if (window.innerWidth < 576) {
+    conUsBtn.innerHTML = `<span class="material-symbols-outlined">arrow_forward_ios</span>`;
+  } else {
+    conUsBtn.innerHTML = "Contact Us";
+  }
 }
-
-const submitBlock = function(event){
-  event.preventDefault()
-  unDefined()
-}
-
-/* let windowSize = window.innerWidth;
-
-if (windowSize != window.innerWidth) {
-  console.log(window.innerWidth);
-  windowSize = window.innerWidth
-} */
-
-console.log(window.innerWidth)
-

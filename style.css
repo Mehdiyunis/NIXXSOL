@@ -1317,6 +1317,7 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
 @media (max-width: 768px){
   .footer .footer_content_con{
     width: 540px;
+    padding-top: 100px;
   }
 }
 
@@ -1324,6 +1325,27 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
   .footer .footer_content_con{
     width: auto;
     max-width: 343px;
+    padding-top: 50px;
+
+  }
+  .footer
+  .footer_content_con
+  .mini_menu-contact_us
+  .contact_us
+  .inp-btn
+  .inp{
+    padding-right: 65px;
+  }
+  .footer
+  .footer_content_con
+  .mini_menu-contact_us
+  .contact_us
+  .inp-btn
+  .btn{
+    padding: 11px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -1344,9 +1366,39 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
   transform: skewX(20deg);
 }
 
+@media (max-width: 1228px){
+  .footer .footer_logo_con{
+    width: 669px;
+    height: 155px;
+  }
+}
+
+@media (max-width: 992px){
+  .footer .footer_logo_con{
+    width: 568px;
+    height: 131px;
+  }
+}
+@media (max-width: 768px){
+  .footer .footer_logo_con{
+    width: 482px;
+    height: 111px;
+  }
+}
+@media (max-width: 576px){
+  .footer .footer_logo_con{
+    width: auto;
+    max-width: 241px;
+    height: auto;
+    max-height: 55px;
+    padding: 9px 35px;
+  transform: translateY(-50%) translateX(-10px) skewX(-20deg);
+  }
+}
+
 .footer .footer_last-word_con {
   background-color: #e4252c;
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .footer .footer_last-word_con .last-word {
@@ -1381,6 +1433,34 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
 
 .footer .footer_last-word_con .last-word .social_media i:hover {
   transform: scale(1.5);
+}
+
+@media (max-width: 1228px){
+
+  .footer .footer_last-word_con .last-word{
+    width: 960px;
+    
+  }
+}
+@media (max-width: 992px){
+
+  .footer .footer_last-word_con .last-word{
+    width: 720px;
+  }
+}
+@media (max-width: 768px){
+  .footer .footer_last-word_con{
+    padding: 16px 0;
+  }
+  .footer .footer_last-word_con .last-word{
+    width: 540px;
+  }
+}
+@media (max-width: 576px){
+  .footer .footer_last-word_con .last-word{
+    width: auto;
+    max-width: 343px;
+  }
 }
 
 .unDefinedElement {
