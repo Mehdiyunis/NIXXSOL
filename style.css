@@ -1476,6 +1476,7 @@ main .sponsor_sec-two .sponsor_con-two .card .img_div {
   border-radius: 14px;
   box-shadow: 0 0 40px 3px #ff0008;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .unDefinedElementShow {
